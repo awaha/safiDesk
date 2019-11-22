@@ -30,6 +30,7 @@ namespace SafiRepay
                 Primary.Green900, Accent.Green400,
                 TextShade.WHITE
             );
+            MyOwnColorManagement(this);
             this.Height = Screen.PrimaryScreen.WorkingArea.Height;
             this.Width = Screen.PrimaryScreen.WorkingArea.Width;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
@@ -39,6 +40,49 @@ namespace SafiRepay
             this.AutoSize = false;
             this.AutoSizeMode = 0;
             this.StartPosition = 0;
+        }
+        public static void MyOwnColorManagement(MaterialForm myForm)
+        {
+            //Initialisation
+            ColorScheme materialColor = myForm.SkinManager.ColorScheme;
+            var materialPrimaryDarkColor = materialColor.DarkPrimaryColor;
+            var materialPrimaryColor = materialColor.PrimaryColor;
+            var materialLightPrimaryColor = materialColor.LightPrimaryColor;
+            var materialAccentColor = materialColor.AccentColor;
+            foreach (Control myControl in myForm.Controls)
+            {
+                //Changes the colors depending of the control, if special colors need to apply for a certain control call it with GetMyColor(colorYouNeeds) after using MyOwnColorManagement
+                if (myControl is Label)
+                {
+                    ((Label)myControl).BackColor = materialPrimaryColor;
+                    ((Label)myControl).ForeColor = GetMyColor(TextShade.WHITE);
+                    ((Label)myControl).Font = new Font("Roboto", ((Label)myControl).Font.Size); //Just Exemples
+                }
+                if (myControl is Button)
+                {
+                    ((Button)myControl).ForeColor = Color.FromArgb(255, 0, 0); //Here is another way to set a personal color
+                }
+                if (myControl is MaterialTabControl) // To apply special colors for controls into TabControls, we must do this : 
+                {
+                    MaterialTabControl.TabPageCollection myTabPages = ((MaterialTabControl)myControl).TabPages;
+                    foreach (TabPage myTabPage in myTabPages)
+                    {
+                        foreach (Control oneTabControl in myTabPage.Controls)
+                        {
+                            if (oneTabControl is Label)
+                            {
+                                ((Label)oneTabControl).BackColor = materialPrimaryColor;
+                                ((Label)oneTabControl).ForeColor = GetMyColor(TextShade.WHITE);
+                                ((Label)oneTabControl).Font = new Font("Roboto", ((Label)oneTabControl).Font.Size); //Just Exemples
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        public static Color GetMyColor(Enum colorToConvert) //get a color from Material's value like TextShade.WHITE or Primary.Yellow800 or Accent.Red500
+        {
+            return ColorTranslator.FromHtml("#" + (Convert.ToInt32(colorToConvert.GetHashCode())).ToString("X"));
         }
 
         private void frm_dashbord_Load(object sender, EventArgs e)
@@ -66,14 +110,7 @@ namespace SafiRepay
                 Primary.Green900, Accent.Green400,
                 TextShade.WHITE
                 );
-                /*foreach (Control x in this.Controls)
-                {
-                    if (x is TextBox)
-                    {
-                        ((TextBox)x).Text = String.Empty;
-                    }
-
-                }*/
+                MyOwnColorManagement(this);
             }
             if (this.tbc_dashboard.SelectedIndex == 1)
             {
@@ -82,15 +119,7 @@ namespace SafiRepay
                 Primary.Yellow900, Accent.Yellow400,
                 TextShade.WHITE
                 );
-                
-                /*foreach (Control x in this.Controls)
-                {
-                    if (x is TextBox)
-                    {
-                        ((TextBox)x).Text = String.Empty;
-                    }
-
-                }*/
+                MyOwnColorManagement(this);
             }
             if (this.tbc_dashboard.SelectedIndex == 2)
             {
@@ -99,14 +128,7 @@ namespace SafiRepay
                 Primary.Red900, Accent.Red400,
                 TextShade.WHITE
                 );
-                /*foreach (Control x in this.Controls)
-                {
-                    if (x is TextBox)
-                    {
-                        ((TextBox)x).Text = String.Empty;
-                    }
-
-                }*/
+                MyOwnColorManagement(this);
             }
             if (this.tbc_dashboard.SelectedIndex == 3)
             {
@@ -115,14 +137,9 @@ namespace SafiRepay
                 Primary.Purple900, Accent.Purple400,
                 TextShade.WHITE
                 );
-                /*foreach (Control x in this.Controls)
-                {
-                    if (x is TextBox)
-                    {
-                        ((TextBox)x).Text = String.Empty;
-                    }
-                    https://www.codeproject.com/Articles/451742/Extending-Csharp-ListView-with-Collapsible-Groups
-                }*/
+                MyOwnColorManagement(this);
+                   //https://www.codeproject.com/Articles/451742/Extending-Csharp-ListView-with-Collapsible-Groups
+
             }
         }
     }
