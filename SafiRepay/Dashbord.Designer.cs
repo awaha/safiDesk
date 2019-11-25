@@ -34,7 +34,6 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tbc_dashboard = new MaterialSkin.Controls.MaterialTabControl();
             this.tbp_argent = new System.Windows.Forms.TabPage();
-            this.sfCalendar1 = new Syncfusion.WinForms.Input.SfCalendar();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -151,7 +150,6 @@
             // 
             // tbp_argent
             // 
-            this.tbp_argent.Controls.Add(this.sfCalendar1);
             this.tbp_argent.Controls.Add(this.label7);
             this.tbp_argent.Controls.Add(this.label6);
             this.tbp_argent.Controls.Add(this.label5);
@@ -167,15 +165,6 @@
             this.tbp_argent.TabIndex = 0;
             this.tbp_argent.Text = "Argent Disponible";
             this.tbp_argent.UseVisualStyleBackColor = true;
-            // 
-            // sfCalendar1
-            // 
-            this.sfCalendar1.Culture = new System.Globalization.CultureInfo("fr-FR");
-            this.sfCalendar1.Location = new System.Drawing.Point(1381, 13);
-            this.sfCalendar1.Name = "sfCalendar1";
-            this.sfCalendar1.Size = new System.Drawing.Size(413, 427);
-            this.sfCalendar1.TabIndex = 18;
-            this.sfCalendar1.Text = "sfCalendar1";
             // 
             // label7
             // 
@@ -1049,7 +1038,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private Syncfusion.WinForms.Input.SfCalendar sfCalendar1;
         private System.Windows.Forms.Label label44;
         private Syncfusion.Windows.Forms.Tools.XPTaskPage xpTaskPage1;
     }
