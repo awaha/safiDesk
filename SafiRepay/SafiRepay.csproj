@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -64,11 +63,14 @@
     <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll</HintPath>
     </Reference>
-    <Reference Include="CSharp.Winform.UI, Version=1.0.1.1, Culture=neutral, PublicKeyToken=872ff9e93c410e95, processorArchitecture=MSIL">
-      <HintPath>..\packages\CSharp.Winform.UI.1.0.1.1\lib\net46\CSharp.Winform.UI.dll</HintPath>
+    <Reference Include="CSharp.Winform.UI, Version=1.0.1.3, Culture=neutral, PublicKeyToken=872ff9e93c410e95, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSharp.Winform.UI.1.0.1.3\lib\net46\CSharp.Winform.UI.dll</HintPath>
     </Reference>
     <Reference Include="JWLibrary.Winform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\JWLibrary.Winform.0.1.0\lib\net45\JWLibrary.Winform.dll</HintPath>
+    </Reference>
+    <Reference Include="ListViewPrinter, Version=2.7.1.31255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\ListViewPrinter.dll</HintPath>
     </Reference>
     <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll</HintPath>
@@ -132,6 +134,9 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="ObjectListView, Version=2.9.1.1072, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.Official.2.9.1\lib\net20\ObjectListView.dll</HintPath>
+    </Reference>
     <Reference Include="OKHOSTING.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\OKHOSTING.Core.1.0.12\lib\net45\OKHOSTING.Core.dll</HintPath>
     </Reference>
@@ -150,32 +155,29 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="RestSharp, Version=100.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharpSigned.105.2.3\lib\net46\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Serializers.Newtonsoft.Json, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.Newtonsoft.Json.1.5.1\lib\net452\RestSharp.Serializers.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SearchPlaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SearchPlaces.1.0.0\lib\netstandard2.0\SearchPlaces.dll</HintPath>
+    </Reference>
+    <Reference Include="SparkleLibrary, Version=2.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\SparkleLibrary.dll</HintPath>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Syncfusion.Buttons.XForms, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Buttons.17.3.0.27\lib\netstandard2.0\Syncfusion.Buttons.XForms.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.Compression.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Compression.Net.Core.17.3.0.27\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Compression.Portable, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Compression.17.3.0.27\lib\netstandard2.0\Syncfusion.Compression.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Core.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Core.WinForms.17.3.0.27\lib\net46\Syncfusion.Core.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core.XForms, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Core.17.3.0.27\lib\netstandard2.0\Syncfusion.Core.XForms.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.Data.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Data.WinForms.17.3.0.27\lib\net46\Syncfusion.Data.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.DataSource.Portable, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.DataSource.17.3.0.27\lib\netstandard2.0\Syncfusion.DataSource.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.DataSource.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.DataSource.WinForms.17.3.0.27\lib\net46\Syncfusion.DataSource.WinForms.dll</HintPath>
@@ -186,17 +188,14 @@
     <Reference Include="Syncfusion.Diagram.Windows, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Diagram.Windows.17.3.0.27\lib\net46\Syncfusion.Diagram.Windows.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Grid.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Grid.Base.17.3.0.27\lib\net46\Syncfusion.Grid.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Grid.Base, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Grid.Base.17.3.0.28\lib\net46\Syncfusion.Grid.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Grid.Grouping.Windows.17.3.0.27\lib\net46\Syncfusion.Grid.Grouping.Windows.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Grid.Windows, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Grid.Windows.17.3.0.27\lib\net46\Syncfusion.Grid.Windows.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.GridCommon.Portable, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.GridCommon.17.3.0.27\lib\netstandard2.0\Syncfusion.GridCommon.Portable.dll</HintPath>
+    <Reference Include="Syncfusion.Grid.Windows, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Grid.Windows.17.3.0.28\lib\net46\Syncfusion.Grid.Windows.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.GridCommon.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.GridCommon.WinForms.17.3.0.27\lib\net46\Syncfusion.GridCommon.WinForms.dll</HintPath>
@@ -204,20 +203,14 @@
     <Reference Include="Syncfusion.Grouping.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Grouping.Base.17.3.0.27\lib\net46\Syncfusion.Grouping.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Licensing, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Licensing.17.3.0.27\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    <Reference Include="Syncfusion.Licensing, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.17.3.0.28\lib\net46\Syncfusion.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Pdf.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Pdf.Net.Core.17.3.0.27\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Pdf.Portable, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Pdf.17.3.0.27\lib\netstandard2.0\Syncfusion.Pdf.Portable.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.PdfViewer.Windows, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.PdfViewer.Windows.17.3.0.27\lib\net46\Syncfusion.PdfViewer.Windows.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfChart.XForms, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.17.3.0.27\lib\netstandard2.0\Syncfusion.SfChart.XForms.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.SfDataGrid.WinForms.17.3.0.27\lib\net46\Syncfusion.SfDataGrid.WinForms.dll</HintPath>
@@ -228,29 +221,23 @@
     <Reference Include="Syncfusion.SfListView.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.SfListView.WinForms.17.3.0.27\lib\net46\Syncfusion.SfListView.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfListView.XForms, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfListView.17.3.0.27\lib\netstandard2.0\Syncfusion.SfListView.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfProgressBar.XForms, Version=17.3451.0.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfProgressBar.17.3.0.27\lib\netstandard2.0\Syncfusion.SfProgressBar.XForms.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.SfSmithChart.WinForms, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.SfSmithChart.WinForms.17.3.0.27\lib\net46\Syncfusion.SfSmithChart.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Shared.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Shared.Base.17.3.0.27\lib\net46\Syncfusion.Shared.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Shared.Base, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.Base.17.3.0.28\lib\net46\Syncfusion.Shared.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Shared.Windows, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Shared.Windows.17.3.0.27\lib\net46\Syncfusion.Shared.Windows.dll</HintPath>
+    <Reference Include="Syncfusion.Shared.Windows, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.Windows.17.3.0.28\lib\net46\Syncfusion.Shared.Windows.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SpellChecker.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.SpellChecker.Base.17.3.0.27\lib\net46\Syncfusion.SpellChecker.Base.dll</HintPath>
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.SpellChecker.Base.17.3.0.28\lib\net46\Syncfusion.SpellChecker.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Tools.Base, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Tools.Base.17.3.0.27\lib\net46\Syncfusion.Tools.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Tools.Base, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Tools.Base.17.3.0.28\lib\net46\Syncfusion.Tools.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Tools.Windows, Version=17.3460.0.27, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Tools.Windows.17.3.0.27\lib\net46\Syncfusion.Tools.Windows.dll</HintPath>
+    <Reference Include="Syncfusion.Tools.Windows, Version=17.3460.0.28, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Tools.Windows.17.3.0.28\lib\net46\Syncfusion.Tools.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -313,20 +300,11 @@
     <Reference Include="ToggleSwitch, Version=1.1.2.0, Culture=neutral, PublicKeyToken=8637099990568f75, processorArchitecture=MSIL">
       <HintPath>..\packages\ToggleSwitch.1.1.2\lib\net40-client\ToggleSwitch.dll</HintPath>
     </Reference>
-    <Reference Include="Validation, Version=2.0.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Validation.2.0.6.15003\lib\portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\Validation.dll</HintPath>
+    <Reference Include="Validation, Version=2.4.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Validation.2.4.22\lib\net45\Validation.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.4.3.0.991211\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.4.3.0.991211\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xamarin.Forms.4.3.0.991211\lib\netstandard2.0\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
     <Reference Include="Zeroit.Framework.Metro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a0cee1bfa120b953, processorArchitecture=MSIL">
       <HintPath>..\packages\Zeroit.Framework.Metro.1.0.0\lib\Zeroit.Framework.Metro.dll</HintPath>
     </Reference>
@@ -444,10 +422,7 @@
     <PropertyGroup>
       <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.props'))" />
-    <Error Condition="!Exists('..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.targets'))" />
     <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets'))" />
   </Target>
-  <Import Project="..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.3.0.991211\build\Xamarin.Forms.targets')" />
   <Import Project="..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
 </Project>
