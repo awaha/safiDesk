@@ -350,25 +350,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashbord.cs">
+    <Compile Include="Classes\Model\User.cs" />
+    <Compile Include="Classes\RAO\UserRAO.cs" />
+    <Compile Include="Classes\RAO\RAO.cs" />
+    <Compile Include="frm_dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashbord.Designer.cs">
-      <DependentUpon>Dashbord.cs</DependentUpon>
+    <Compile Include="frm_dashbord.Designer.cs">
+      <DependentUpon>frm_dashbord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Dashbord.resx">
-      <DependentUpon>Dashbord.cs</DependentUpon>
+    <EmbeddedResource Include="frm_dashbord.resx">
+      <DependentUpon>frm_dashbord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

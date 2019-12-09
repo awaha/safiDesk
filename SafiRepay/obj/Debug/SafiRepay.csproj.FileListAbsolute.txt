@@ -290,3 +290,17 @@ E:\SafiRepay\SafiRepay\SafiRepay\bin\Debug\Xamarin.Forms.Core.xml
 E:\SafiRepay\SafiRepay\SafiRepay\bin\Debug\Xamarin.Forms.Xaml.pdb
 E:\SafiRepay\SafiRepay\SafiRepay\bin\Debug\Xamarin.Forms.Xaml.xml
 E:\SafiRepay\SafiRepay\SafiRepay\obj\Debug\XamlC.stamp
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.csprojAssemblyReference.cache
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\Resources\Icons.baml
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay_Content.g.cs
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay_MarkupCompile.cache
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.g.resources
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.frm_dashboard.resources
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.frm_login.resources
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.Properties.Resources.resources
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.csproj.GenerateResource.cache
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.exe.licenses
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.csproj.CoreCompileInputs.cache
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.exe
+C:\Users\GILLY31WI\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.pdb

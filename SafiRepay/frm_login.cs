@@ -46,7 +46,9 @@ namespace SafiRepay
 
         private void Btn_connection_Click(object sender, EventArgs e)
         {
-            frm_dashboard frm_Dashboard = new frm_dashboard();
+            var userConnected = LoginRAO.getLogin("aribiA", "aaaa");
+
+            frm_dashboard frm_Dashboard = new frm_dashboard(userConnected);
             frm_Dashboard.Show();
             this.Hide();
         }
