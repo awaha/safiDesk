@@ -23691,6 +23691,16 @@
             The right border weight of the cell.
             </summary>
         </member>
+        <member name="F:Syncfusion.WinForms.DataGrid.AutoSizeController.initialRefresh">
+            <summary>
+            Indicates whether the initailRefresh need or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WinForms.DataGrid.AutoSizeController.gridRowsFitToView">
+            <summary>
+            /// Indicates whether the gridRowsFitToView or not.
+            </summary>
+        </member>
         <member name="M:Syncfusion.WinForms.DataGrid.AutoSizeController.#ctor(Syncfusion.WinForms.DataGrid.SfDataGrid)">
             <summary>
             Initializes a new instance of the <see cref="T:Syncfusion.WinForms.DataGrid.AutoSizeController"/> class.
@@ -24065,6 +24075,17 @@
             <param name="size">The client size of the cell.</param>
             <param name="column">The GridColumn that needs to be calculated.</param>
             <returns>Returns the height of the header cell.</returns>
+        </member>
+        <member name="M:Syncfusion.WinForms.DataGrid.AutoSizeController.OnRowHeightsLineHiddenChanged(System.Object,Syncfusion.WinForms.GridCommon.ScrollAxis.HiddenRangeChangedEventArgs)">
+            <summary>
+            Occurs when RowHeight_LineHidden is changed.
+            </summary>
+            <param name="sender">
+            The object of the sender.
+            </param>
+            <param name="e">
+            The <see cref="T:Syncfusion.WinForms.GridCommon.ScrollAxis.HiddenRangeChangedEventArgs"/> that contains the event data.
+            </param>
         </member>
         <member name="P:Syncfusion.WinForms.DataGrid.AutoSizeController.DataGrid">
             <summary>
@@ -31129,6 +31150,16 @@
         <member name="P:Syncfusion.WinForms.DataGrid.TableControl.ValidationToolTip">
             <summary>
             Gets or sets the validation error tooltip object displayed while hovering on the error icon of the cells.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WinForms.DataGrid.TableControl.ExtentHeight">
+            <summary>
+            Gets the ExtentHeight value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WinForms.DataGrid.TableControl.VScrollLargeChange">
+            <summary>
+            Gets the VScrollLargeChange value.
             </summary>
         </member>
         <member name="P:Syncfusion.WinForms.DataGrid.TableControl.HeaderLineCount">

@@ -16,7 +16,8 @@ namespace SafiRepay
 {
     public partial class frm_dashboard : MaterialForm
     {
-        public frm_dashboard()
+        public RAO.User myActualUser;
+        public frm_dashboard(RAO.User myActualUser)
         {
             
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace SafiRepay
                 TextShade.WHITE
             );
             MyOwnColorManagement(this);
+            tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor; 
             this.Height = Screen.PrimaryScreen.WorkingArea.Height;
             this.Width = Screen.PrimaryScreen.WorkingArea.Width;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
@@ -40,6 +42,7 @@ namespace SafiRepay
             this.AutoSize = false;
             this.AutoSizeMode = 0;
             this.StartPosition = 0;
+            this.myActualUser = myActualUser;
         }
         public static void MyOwnColorManagement(MaterialForm myForm)
         {
@@ -54,7 +57,7 @@ namespace SafiRepay
                 //Changes the colors depending of the control, if special colors need to apply for a certain control call it with GetMyColor(colorYouNeeds) after using MyOwnColorManagement
                 if (myControl is Label)
                 {
-                    ((Label)myControl).BackColor = materialPrimaryColor;
+                    
                     ((Label)myControl).ForeColor = GetMyColor(TextShade.WHITE);
                     ((Label)myControl).Font = new Font("Roboto", ((Label)myControl).Font.Size); //Just Exemples
                 }
@@ -71,7 +74,7 @@ namespace SafiRepay
                         {
                             if (oneTabControl is Label)
                             {
-                                ((Label)oneTabControl).BackColor = materialPrimaryColor;
+                                
                                 ((Label)oneTabControl).ForeColor = GetMyColor(TextShade.WHITE);
                                 ((Label)oneTabControl).Font = new Font("Roboto", ((Label)oneTabControl).Font.Size); //Just Exemples
                             }
@@ -88,6 +91,7 @@ namespace SafiRepay
         private void frm_dashbord_Load(object sender, EventArgs e)
         {
             //tbc_dashboard.TabPages.Remove(tbp_utilisateurs); // todo if user isn't admin
+            tbx_nomPrenom.Text = (myActualUser.lastname).ToUpper() + ' ' + myActualUser.firstname;
         }
 
         private void frm_dashboard_FormClosing(object sender, FormClosingEventArgs e)
@@ -111,6 +115,7 @@ namespace SafiRepay
                 TextShade.WHITE
                 );
                 MyOwnColorManagement(this);
+                tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
             }
             if (this.tbc_dashboard.SelectedIndex == 1)
             {
@@ -120,6 +125,7 @@ namespace SafiRepay
                 TextShade.WHITE
                 );
                 MyOwnColorManagement(this);
+                tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
             }
             if (this.tbc_dashboard.SelectedIndex == 2)
             {
@@ -129,6 +135,7 @@ namespace SafiRepay
                 TextShade.WHITE
                 );
                 MyOwnColorManagement(this);
+                tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
             }
             if (this.tbc_dashboard.SelectedIndex == 3)
             {
@@ -138,7 +145,8 @@ namespace SafiRepay
                 TextShade.WHITE
                 );
                 MyOwnColorManagement(this);
-                   //https://www.codeproject.com/Articles/451742/Extending-Csharp-ListView-with-Collapsible-Groups
+                tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
+                //https://www.codeproject.com/Articles/451742/Extending-Csharp-ListView-with-Collapsible-Groups
 
             }
         }

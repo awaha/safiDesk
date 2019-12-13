@@ -3836,12 +3836,6 @@
             Method used to update the password toggle view position based on the background mode property.
             </summary>
         </member>
-        <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.CreateLabelInstance">
-            <summary>
-            Creates the new label instance and sets necessary attributes for the assistive label.
-            </summary>
-            <returns>The label instance.</returns>
-        </member>
         <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateErrorVisibility">
             <summary>
             Updates the error visibility through animation.
@@ -4021,6 +4015,26 @@
         <member name="M:Syncfusion.XForms.TextInputLayout.SfTextInputLayout.UpdateClearButtonColor">
             <summary>
             Method used to set the tint color to the clear button in the drop down control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.TextInputHintLabel">
+            <summary>
+            To apply the implicit style customizations for the hint label when using TextInputHintLabel as a target type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.TextInputHelperLabel">
+            <summary>
+            To apply the implicit style customizations for the helper text when using TextInputHelperLabel as a target type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.TextInputErrorLabel">
+            <summary>
+            To apply the implicit style customizations for the error label when using TextInputErrorLabel as a target type.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.XForms.TextInputLayout.TextInputCounterLabel">
+            <summary>
+            To apply the implicit style customizations for the counter label when using TextInputCounterLabel as a target type.
             </summary>
         </member>
         <member name="T:Syncfusion.XForms.TextInputLayout.NamespaceDoc">

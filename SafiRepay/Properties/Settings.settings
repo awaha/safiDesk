@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="routeApi" Type="System.String" Scope="User">
-      <Value Profile="(Default)">127.0.0.1</Value>
+      <Value Profile="(Default)">http://192.168.200.169:8000/api/</Value>
     </Setting>
   </Settings>
 </SettingsFile>

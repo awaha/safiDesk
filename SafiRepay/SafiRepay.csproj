@@ -350,7 +350,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Model\User.cs" />
     <Compile Include="Classes\RAO\UserRAO.cs" />
     <Compile Include="Classes\RAO\RAO.cs" />
     <Compile Include="frm_dashbord.cs">

@@ -61,12 +61,13 @@
             this.tbx_login.Name = "tbx_login";
             this.tbx_login.Size = new System.Drawing.Size(193, 29);
             this.tbx_login.TabIndex = 3;
+            this.tbx_login.Text = "dandre";
             // 
             // cbx_enregistrerIdentifiant
             // 
             this.cbx_enregistrerIdentifiant.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbx_enregistrerIdentifiant.Depth = 0;
-            this.cbx_enregistrerIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbx_enregistrerIdentifiant.Font = new System.Drawing.Font("Roboto", 10F);
             this.cbx_enregistrerIdentifiant.Location = new System.Drawing.Point(852, 518);
             this.cbx_enregistrerIdentifiant.Margin = new System.Windows.Forms.Padding(0);
             this.cbx_enregistrerIdentifiant.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -86,6 +87,7 @@
             this.tbx_password.Name = "tbx_password";
             this.tbx_password.Size = new System.Drawing.Size(193, 29);
             this.tbx_password.TabIndex = 5;
+            this.tbx_password.Text = "oppg5";
             // 
             // btn_connection
             // 
@@ -108,12 +110,12 @@
             this.lbl_login.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_login.AutoSize = true;
             this.lbl_login.Depth = 0;
-            this.lbl_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lbl_login.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbl_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_login.Location = new System.Drawing.Point(922, 337);
             this.lbl_login.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(44, 18);
+            this.lbl_login.Size = new System.Drawing.Size(46, 19);
             this.lbl_login.TabIndex = 11;
             this.lbl_login.Text = "Login";
             // 
@@ -122,12 +124,12 @@
             this.lbl_password.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_password.AutoSize = true;
             this.lbl_password.Depth = 0;
-            this.lbl_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lbl_password.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbl_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbl_password.Location = new System.Drawing.Point(897, 420);
             this.lbl_password.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(98, 18);
+            this.lbl_password.Size = new System.Drawing.Size(100, 19);
             this.lbl_password.TabIndex = 12;
             this.lbl_password.Text = "Mot de passe";
             // 

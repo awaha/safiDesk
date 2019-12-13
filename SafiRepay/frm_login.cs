@@ -46,11 +46,26 @@ namespace SafiRepay
 
         private void Btn_connection_Click(object sender, EventArgs e)
         {
-            var userConnected = LoginRAO.getLogin("aribiA", "aaaa");
+            try
+            {
+                string username = tbx_login.Text;
+                string psw = tbx_password.Text;
 
-            frm_dashboard frm_Dashboard = new frm_dashboard(userConnected);
-            frm_Dashboard.Show();
-            this.Hide();
+                RAO.User userWantsConnection = RAO.User.getLogin(username, psw);
+                //userWantsConnection est forcément différent de null
+                //Si Connection ok
+                if (userWantsConnection != null)
+                {
+
+                    // Revenir au Dashboard qui montre les données du user connecté
+                    MaterialForm dashboard = new frm_dashboard(userWantsConnection);
+                    dashboard.Show();
+                    // Kill le frm_login
+                    Hide();
+                }
+            }
+            catch { MessageBox.Show("connection impossible"); }
+
         }
     }
 }
