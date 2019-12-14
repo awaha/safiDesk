@@ -930,7 +930,9 @@
             // 
             // button1
             // 
+            this.button1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(3, 72);

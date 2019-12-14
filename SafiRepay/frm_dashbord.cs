@@ -63,7 +63,10 @@ namespace SafiRepay
                 }
                 if (myControl is Button)
                 {
-                    ((Button)myControl).ForeColor = Color.FromArgb(255, 0, 0); //Here is another way to set a personal color
+                    ((Button)myControl).ForeColor = GetMyColor(TextShade.WHITE); //Here is another way to set a personal color
+                    ((Button)myControl).BackColor = materialPrimaryColor;
+                    ((Button)myControl).FlatStyle = FlatStyle.Flat;
+                    ((Button)myControl).FlatAppearance.BorderSize = 0;
                 }
                 if (myControl is MaterialTabControl) // To apply special colors for controls into TabControls, we must do this : 
                 {
@@ -77,6 +80,13 @@ namespace SafiRepay
                                 
                                 ((Label)oneTabControl).ForeColor = GetMyColor(TextShade.WHITE);
                                 ((Label)oneTabControl).Font = new Font("Roboto", ((Label)oneTabControl).Font.Size); //Just Exemples
+                            }
+                            if (oneTabControl is Button)
+                            {
+                                ((Button)oneTabControl).ForeColor = GetMyColor(TextShade.WHITE); //Here is another way to set a personal color
+                                ((Button)oneTabControl).BackColor = materialPrimaryColor;
+                                ((Button)oneTabControl).FlatStyle = FlatStyle.Flat;
+                                ((Button)oneTabControl).FlatAppearance.BorderSize = 0;
                             }
                         }
                     }

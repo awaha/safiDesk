@@ -38,6 +38,10 @@
             this.pbx_iconseil = new System.Windows.Forms.PictureBox();
             this.pbx_safiRepay = new System.Windows.Forms.PictureBox();
             this.pbx_safi = new System.Windows.Forms.PictureBox();
+            this.lbl_changeIp = new System.Windows.Forms.Label();
+            this.tbx_ipApi = new System.Windows.Forms.TextBox();
+            this.btn_showParameters = new System.Windows.Forms.Button();
+            this.btn_apiValider = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_iconseil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_safiRepay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_safi)).BeginInit();
@@ -94,7 +98,7 @@
             this.btn_connection.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_connection.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_connection.Depth = 0;
-            this.btn_connection.Font = new System.Drawing.Font("Miriam CLM", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.btn_connection.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btn_connection.Location = new System.Drawing.Point(794, 594);
             this.btn_connection.MouseState = MaterialSkin.MouseState.HOVER;
             this.btn_connection.Name = "btn_connection";
@@ -161,12 +165,72 @@
             this.pbx_safi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbx_safi.TabIndex = 6;
             this.pbx_safi.TabStop = false;
+            this.pbx_safi.Click += new System.EventHandler(this.pbx_safi_Click);
+            // 
+            // lbl_changeIp
+            // 
+            this.lbl_changeIp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbl_changeIp.AutoSize = true;
+            this.lbl_changeIp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_changeIp.Location = new System.Drawing.Point(55, 686);
+            this.lbl_changeIp.Name = "lbl_changeIp";
+            this.lbl_changeIp.Size = new System.Drawing.Size(158, 20);
+            this.lbl_changeIp.TabIndex = 13;
+            this.lbl_changeIp.Text = "Changer l\'ip de l\'API :";
+            this.lbl_changeIp.Visible = false;
+            // 
+            // tbx_ipApi
+            // 
+            this.tbx_ipApi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tbx_ipApi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_ipApi.Location = new System.Drawing.Point(58, 712);
+            this.tbx_ipApi.Name = "tbx_ipApi";
+            this.tbx_ipApi.Size = new System.Drawing.Size(155, 26);
+            this.tbx_ipApi.TabIndex = 14;
+            this.tbx_ipApi.Visible = false;
+            this.tbx_ipApi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // btn_showParameters
+            // 
+            this.btn_showParameters.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_showParameters.FlatAppearance.BorderSize = 0;
+            this.btn_showParameters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_showParameters.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_showParameters.Location = new System.Drawing.Point(12, 526);
+            this.btn_showParameters.Name = "btn_showParameters";
+            this.btn_showParameters.Size = new System.Drawing.Size(272, 118);
+            this.btn_showParameters.TabIndex = 15;
+            this.btn_showParameters.Text = "Changer l\'ip de l\'API";
+            this.btn_showParameters.UseVisualStyleBackColor = true;
+            this.btn_showParameters.Visible = false;
+            this.btn_showParameters.Click += new System.EventHandler(this.btn_showParameters_Click);
+            this.btn_showParameters.MouseLeave += new System.EventHandler(this.btn_showParameters_MouseLeave);
+            this.btn_showParameters.MouseHover += new System.EventHandler(this.btn_showParameters_MouseHover);
+            // 
+            // btn_apiValider
+            // 
+            this.btn_apiValider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_apiValider.FlatAppearance.BorderSize = 0;
+            this.btn_apiValider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_apiValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_apiValider.Location = new System.Drawing.Point(58, 744);
+            this.btn_apiValider.Name = "btn_apiValider";
+            this.btn_apiValider.Size = new System.Drawing.Size(155, 27);
+            this.btn_apiValider.TabIndex = 16;
+            this.btn_apiValider.Text = "Valider";
+            this.btn_apiValider.UseVisualStyleBackColor = true;
+            this.btn_apiValider.Visible = false;
+            this.btn_apiValider.Click += new System.EventHandler(this.btn_apiValider_Click);
             // 
             // frm_login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1873, 930);
+            this.Controls.Add(this.btn_apiValider);
+            this.Controls.Add(this.btn_showParameters);
+            this.Controls.Add(this.tbx_ipApi);
+            this.Controls.Add(this.lbl_changeIp);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_login);
             this.Controls.Add(this.btn_connection);
@@ -202,6 +266,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton btn_connection;
         private MaterialSkin.Controls.MaterialLabel lbl_login;
         private MaterialSkin.Controls.MaterialLabel lbl_password;
+        private System.Windows.Forms.Label lbl_changeIp;
+        private System.Windows.Forms.TextBox tbx_ipApi;
+        private System.Windows.Forms.Button btn_showParameters;
+        private System.Windows.Forms.Button btn_apiValider;
     }
 }
 
