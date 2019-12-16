@@ -352,6 +352,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\RAO\PackageTypeRAO.cs" />
     <Compile Include="Classes\RAO\UserRAO.cs" />
     <Compile Include="Classes\RAO\RAO.cs" />
     <Compile Include="frm_dashbord.cs">
@@ -366,6 +367,12 @@
     <Compile Include="frm_login.Designer.cs">
       <DependentUpon>frm_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_personnalParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_personnalParam.Designer.cs">
+      <DependentUpon>frm_personnalParam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_dashbord.resx">
@@ -373,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_personnalParam.resx">
+      <DependentUpon>frm_personnalParam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

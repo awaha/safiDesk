@@ -669,3 +669,4 @@ E:\Users\Flamme\Source\Repos\safiDesk\SafiRepay\obj\Debug\XamlC.stamp
 E:\Users\Flamme\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.csproj.CopyComplete
 E:\Users\Flamme\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.exe
 E:\Users\Flamme\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.pdb
+E:\Users\Flamme\Source\Repos\safiDesk\SafiRepay\obj\Debug\SafiRepay.frm_personnalParam.resources

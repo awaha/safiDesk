@@ -146,6 +146,12 @@ namespace SafiRepay
                 );
                 MyOwnColorManagement(this);
                 tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
+                /*List<RAO.PackageType> packageType = RAO.PackageType.getFixedCosts();
+                foreach (RAO.PackageType OnePackageType in packageType)
+                {
+                    Console.WriteLine(OnePackageType.name);
+                }*/
+
             }
             if (this.tbc_dashboard.SelectedIndex == 3)
             {
@@ -157,10 +163,15 @@ namespace SafiRepay
                 MyOwnColorManagement(this);
                 tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
                 //https://www.codeproject.com/Articles/451742/Extending-Csharp-ListView-with-Collapsible-Groups
-
+                
             }
         }
 
+        private void btn_personnalParam_Click(object sender, EventArgs e)
+        {
+            frm_personnalParam paramForm = new frm_personnalParam();
+            paramForm.Show();
+        }
     }
 }
 

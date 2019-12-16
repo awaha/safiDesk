@@ -171,6 +171,7 @@ namespace SafiRepay
             btn_apiValider.Visible = false;
             lbl_changeIp.Visible = false;
             tbx_ipApi.Visible = false;
+            Properties.Settings.Default.Save();
         }
     }
 }

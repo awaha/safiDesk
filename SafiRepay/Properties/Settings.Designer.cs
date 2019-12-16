@@ -34,5 +34,341 @@ namespace SafiRepay.Properties {
                 this["routeApi"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_auto_HF {
+            get {
+                return ((bool)(this["param_auto_HF"]));
+            }
+            set {
+                this["param_auto_HF"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int param_HF_start {
+            get {
+                return ((int)(this["param_HF_start"]));
+            }
+            set {
+                this["param_HF_start"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int param_HF_end {
+            get {
+                return ((int)(this["param_HF_end"]));
+            }
+            set {
+                this["param_HF_end"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_HF_justificatif {
+            get {
+                return ((bool)(this["param_HF_justificatif"]));
+            }
+            set {
+                this["param_HF_justificatif"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool param_HF_isManual {
+            get {
+                return ((bool)(this["param_HF_isManual"]));
+            }
+            set {
+                this["param_HF_isManual"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_auto_repasMidi {
+            get {
+                return ((bool)(this["param_auto_repasMidi"]));
+            }
+            set {
+                this["param_auto_repasMidi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int param_repasMidi_value {
+            get {
+                return ((int)(this["param_repasMidi_value"]));
+            }
+            set {
+                this["param_repasMidi_value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int param_repasMidi_limit {
+            get {
+                return ((int)(this["param_repasMidi_limit"]));
+            }
+            set {
+                this["param_repasMidi_limit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_repasMidi_limit_isAble {
+            get {
+                return ((bool)(this["param_repasMidi_limit_isAble"]));
+            }
+            set {
+                this["param_repasMidi_limit_isAble"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool param_repasMidi_isManual {
+            get {
+                return ((bool)(this["param_repasMidi_isManual"]));
+            }
+            set {
+                this["param_repasMidi_isManual"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_auto_relais {
+            get {
+                return ((bool)(this["param_auto_relais"]));
+            }
+            set {
+                this["param_auto_relais"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int param_relais_value {
+            get {
+                return ((int)(this["param_relais_value"]));
+            }
+            set {
+                this["param_relais_value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int param_relais_limit {
+            get {
+                return ((int)(this["param_relais_limit"]));
+            }
+            set {
+                this["param_relais_limit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_relais_limit_isAble {
+            get {
+                return ((bool)(this["param_relais_limit_isAble"]));
+            }
+            set {
+                this["param_relais_limit_isAble"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool param_relais_isManual {
+            get {
+                return ((bool)(this["param_relais_isManual"]));
+            }
+            set {
+                this["param_relais_isManual"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_auto_nuite {
+            get {
+                return ((bool)(this["param_auto_nuite"]));
+            }
+            set {
+                this["param_auto_nuite"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int param_nuite_value {
+            get {
+                return ((int)(this["param_nuite_value"]));
+            }
+            set {
+                this["param_nuite_value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int param_nuite_limit {
+            get {
+                return ((int)(this["param_nuite_limit"]));
+            }
+            set {
+                this["param_nuite_limit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_nuite_limit_isAble {
+            get {
+                return ((bool)(this["param_nuite_limit_isAble"]));
+            }
+            set {
+                this["param_nuite_limit_isAble"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool param_nuite_isManual {
+            get {
+                return ((bool)(this["param_nuite_isManual"]));
+            }
+            set {
+                this["param_nuite_isManual"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_auto_move {
+            get {
+                return ((bool)(this["param_auto_move"]));
+            }
+            set {
+                this["param_auto_move"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int param_move_value {
+            get {
+                return ((int)(this["param_move_value"]));
+            }
+            set {
+                this["param_move_value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int param_move_limit {
+            get {
+                return ((int)(this["param_move_limit"]));
+            }
+            set {
+                this["param_move_limit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_move_limit_isAble {
+            get {
+                return ((bool)(this["param_move_limit_isAble"]));
+            }
+            set {
+                this["param_move_limit_isAble"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool param_move_isManual {
+            get {
+                return ((bool)(this["param_move_isManual"]));
+            }
+            set {
+                this["param_move_isManual"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool param_limitMove_able {
+            get {
+                return ((bool)(this["param_limitMove_able"]));
+            }
+            set {
+                this["param_limitMove_able"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("25000")]
+        public int param_limitMove_km {
+            get {
+                return ((int)(this["param_limitMove_km"]));
+            }
+            set {
+                this["param_limitMove_km"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool param_limitMove_isManual {
+            get {
+                return ((bool)(this["param_limitMove_isManual"]));
+            }
+            set {
+                this["param_limitMove_isManual"] = value;
+            }
+        }
     }
 }
