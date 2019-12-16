@@ -169,7 +169,7 @@ namespace SafiRepay
 
         private void btn_personnalParam_Click(object sender, EventArgs e)
         {
-            frm_personnalParam paramForm = new frm_personnalParam();
+            frm_personnalParam paramForm = new frm_personnalParam(this);
             paramForm.Show();
         }
     }

@@ -109,7 +109,12 @@
             this.Toggle = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbp_parametres = new System.Windows.Forms.TabPage();
+            this.btn_personnalParam = new System.Windows.Forms.Button();
             this.btn_Enregistrer = new System.Windows.Forms.Button();
             this.label40 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
@@ -131,11 +136,6 @@
             this.tbx_serviceComptable = new System.Windows.Forms.Label();
             this.tbx_nomPrenom = new System.Windows.Forms.Label();
             this.xpTaskPage1 = new Syncfusion.Windows.Forms.Tools.XPTaskPage();
-            this.btn_personnalParam = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             betterListViewItem3 = new ComponentOwl.BetterListView.BetterListViewItem();
             this.tbc_dashboard.SuspendLayout();
             this.tbp_argent.SuspendLayout();
@@ -147,12 +147,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.tbp_parametres.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xpTaskPage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tbp_parametres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xpTaskPage1)).BeginInit();
             this.SuspendLayout();
             // 
             // betterListViewItem3
@@ -950,6 +950,38 @@
             this.numericUpDown1.Size = new System.Drawing.Size(173, 20);
             this.numericUpDown1.TabIndex = 0;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(250, 24);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox4.TabIndex = 20;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(1300, 39);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(934, 37);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(585, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // tbp_parametres
             // 
             this.tbp_parametres.Controls.Add(this.btn_personnalParam);
@@ -974,8 +1006,20 @@
             this.tbp_parametres.Text = "Paramètres de validation";
             this.tbp_parametres.UseVisualStyleBackColor = true;
             // 
+            // btn_personnalParam
+            // 
+            this.btn_personnalParam.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_personnalParam.Location = new System.Drawing.Point(206, 472);
+            this.btn_personnalParam.Name = "btn_personnalParam";
+            this.btn_personnalParam.Size = new System.Drawing.Size(523, 107);
+            this.btn_personnalParam.TabIndex = 14;
+            this.btn_personnalParam.Text = "Afficher les paramètres personnels";
+            this.btn_personnalParam.UseVisualStyleBackColor = true;
+            this.btn_personnalParam.Click += new System.EventHandler(this.btn_personnalParam_Click);
+            // 
             // btn_Enregistrer
             // 
+            this.btn_Enregistrer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Enregistrer.Location = new System.Drawing.Point(960, 446);
             this.btn_Enregistrer.Name = "btn_Enregistrer";
             this.btn_Enregistrer.Size = new System.Drawing.Size(453, 69);
@@ -1195,49 +1239,6 @@
             this.xpTaskPage1.TabIndex = 0;
             this.xpTaskPage1.Title = "Page Title";
             // 
-            // btn_personnalParam
-            // 
-            this.btn_personnalParam.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_personnalParam.Location = new System.Drawing.Point(206, 472);
-            this.btn_personnalParam.Name = "btn_personnalParam";
-            this.btn_personnalParam.Size = new System.Drawing.Size(523, 107);
-            this.btn_personnalParam.TabIndex = 14;
-            this.btn_personnalParam.Text = "Afficher les paramètres personnels";
-            this.btn_personnalParam.UseVisualStyleBackColor = true;
-            this.btn_personnalParam.Click += new System.EventHandler(this.btn_personnalParam_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(250, 24);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(1300, 39);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(934, 37);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(585, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1262,13 +1263,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.tbp_parametres.ResumeLayout(false);
-            this.tbp_parametres.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xpTaskPage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tbp_parametres.ResumeLayout(false);
+            this.tbp_parametres.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xpTaskPage1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

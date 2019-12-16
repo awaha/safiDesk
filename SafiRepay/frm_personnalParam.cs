@@ -16,19 +16,20 @@ namespace SafiRepay
 {
     public partial class frm_personnalParam : MaterialForm
     {
-        public frm_personnalParam()
+        MaterialForm dashboard;
+        public frm_personnalParam(MaterialForm form)
         {
             InitializeComponent();
             MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-
+            this.dashboard = form;
             // Configure color schema
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Green400, Primary.Green600,
-                Primary.Green900, Accent.Green400,
+            this.SkinManager.ColorScheme = new ColorScheme(
+                Primary.Red400, Primary.Red600,
+                Primary.Red900, Accent.Red400,
                 TextShade.WHITE
-            );
+                );
             MyOwnColorManagement(this);
             this.Height = Screen.PrimaryScreen.WorkingArea.Height;
             this.Width = Screen.PrimaryScreen.WorkingArea.Width;
@@ -39,6 +40,7 @@ namespace SafiRepay
             this.AutoSize = false;
             this.AutoSizeMode = 0;
             this.StartPosition = 0;
+            
         }
         public static void MyOwnColorManagement(MaterialForm myForm)
         {
@@ -144,6 +146,8 @@ namespace SafiRepay
             swc_nuitee.Checked = ps.param_nuite_isManual;
             swc_move.Checked = ps.param_move_isManual;
             swc_moveLimit.Checked = ps.param_limitMove_isManual;
+
+            dashboard.Hide();
         }
 
         private void btn_selUnsel_global_Click(object sender, EventArgs e)
@@ -253,6 +257,15 @@ namespace SafiRepay
             Properties.Settings.Default.Save();
             this.Hide();
             MessageBox.Show("Changement enregistrés");
+            this.Close();
         }
+
+        private void Frm_personnalParam_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dashboard.Show();
+            System.Threading.Thread.Sleep(200);
+        }
+
+
     }
 }

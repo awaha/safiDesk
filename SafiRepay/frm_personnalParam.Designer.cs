@@ -563,9 +563,10 @@
             // 
             // btn_selUnsel_global
             // 
+            this.btn_selUnsel_global.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_selUnsel_global.Location = new System.Drawing.Point(12, 375);
             this.btn_selUnsel_global.Name = "btn_selUnsel_global";
-            this.btn_selUnsel_global.Size = new System.Drawing.Size(161, 51);
+            this.btn_selUnsel_global.Size = new System.Drawing.Size(216, 67);
             this.btn_selUnsel_global.TabIndex = 47;
             this.btn_selUnsel_global.Text = "Tout Selectionner/Déselectionner";
             this.btn_selUnsel_global.UseVisualStyleBackColor = true;
@@ -573,9 +574,10 @@
             // 
             // btn_selUnsel_limit
             // 
-            this.btn_selUnsel_limit.Location = new System.Drawing.Point(833, 404);
+            this.btn_selUnsel_limit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_selUnsel_limit.Location = new System.Drawing.Point(813, 393);
             this.btn_selUnsel_limit.Name = "btn_selUnsel_limit";
-            this.btn_selUnsel_limit.Size = new System.Drawing.Size(161, 51);
+            this.btn_selUnsel_limit.Size = new System.Drawing.Size(202, 72);
             this.btn_selUnsel_limit.TabIndex = 48;
             this.btn_selUnsel_limit.Text = "Tout Selectionner/Déselectionner\r\n(Limites)";
             this.btn_selUnsel_limit.UseVisualStyleBackColor = true;
@@ -583,9 +585,10 @@
             // 
             // btn_selUnsel_manual
             // 
-            this.btn_selUnsel_manual.Location = new System.Drawing.Point(1065, 404);
+            this.btn_selUnsel_manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_selUnsel_manual.Location = new System.Drawing.Point(1045, 404);
             this.btn_selUnsel_manual.Name = "btn_selUnsel_manual";
-            this.btn_selUnsel_manual.Size = new System.Drawing.Size(161, 51);
+            this.btn_selUnsel_manual.Size = new System.Drawing.Size(208, 71);
             this.btn_selUnsel_manual.TabIndex = 49;
             this.btn_selUnsel_manual.Text = "Tout Selectionner/Déselectionner\r\n(Traitement Manuel)";
             this.btn_selUnsel_manual.UseVisualStyleBackColor = true;
@@ -670,6 +673,7 @@
             this.Controls.Add(this.cbx_horsForfait);
             this.Name = "frm_personnalParam";
             this.Text = "Paramètres Personnels";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_personnalParam_FormClosing);
             this.Load += new System.EventHandler(this.frm_personnalParam_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

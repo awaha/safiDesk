@@ -36,5 +36,22 @@ namespace SafiRepay.RAO
             //Debug.WriteLine(response.Content);
             return response.Content;
         }
+        /*
+        public static String post(String route, String paramRoute)
+        {
+            RestClient client = new RestClient();
+            client.BaseUrl = new Uri(Properties.Settings.Default.routeApi);
+            //post
+            RestRequest request = new RestRequest(route, Method.POST);
+            if (Global.connectedEmployee != null)
+            {
+                request.AddHeader("Authorization", "Bearer " + Global.connectedEmployee.token);
+            }
+            request.AddHeader("content-type", "application/x-www-form-urlencoded");
+            request.AddParameter("application/x-www-form-urlencoded", $"" + paramRoute, ParameterType.RequestBody);
+            IRestResponse response = client.Execute(request);
+            return response.Content;
+        }
+        */
     }
 }
