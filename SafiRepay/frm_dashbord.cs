@@ -146,12 +146,12 @@ namespace SafiRepay
                 );
                 MyOwnColorManagement(this);
                 tbx_serviceComptable.BackColor = this.SkinManager.ColorScheme.PrimaryColor;
-                /*List<RAO.PackageType> packageType = RAO.PackageType.getFixedCosts();
+                List<RAO.PackageType> packageType = RAO.PackageType.getFixedCosts();
                 foreach (RAO.PackageType OnePackageType in packageType)
                 {
                     Console.WriteLine(OnePackageType.name);
-                }*/
-
+                }
+                
             }
             if (this.tbc_dashboard.SelectedIndex == 3)
             {

@@ -255,15 +255,17 @@ namespace SafiRepay
             Properties.Settings.Default.param_limitMove_isManual = swc_moveLimit.Checked;
 
             Properties.Settings.Default.Save();
-            this.Hide();
             MessageBox.Show("Changement enregistrés");
+            dashboard.Show();
+            this.Hide();
+            System.Threading.Thread.Sleep(200);
             this.Close();
         }
 
         private void Frm_personnalParam_FormClosing(object sender, FormClosingEventArgs e)
         {
-            dashboard.Show();
             System.Threading.Thread.Sleep(200);
+            dashboard.Show();
         }
 
 

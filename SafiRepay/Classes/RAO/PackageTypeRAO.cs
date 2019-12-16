@@ -16,28 +16,16 @@ namespace SafiRepay.RAO
         public List<PackageType> data { get; set; }
         public static List<PackageType> getFixedCosts()
         {
+            List<PackageType> myPackageTypes = new List<PackageType>();
             // Transforme la chaine de caractère du RAO en objet JSON = parser
-            JObject jsonParse = JObject.Parse(RAO.get("getFixedCosts/"));
-
-            if (jsonParse["message"].ToString().CompareTo("ok") == 0)
+            JArray jsonParse = JArray.Parse(RAO.get("getFixedCosts/"));
+            Console.WriteLine(jsonParse);
+            foreach(JObject jObject in jsonParse)
             {
-                List<PackageType> listes = new List<PackageType>();
-                JArray jsonData = jsonParse["data"].ToObject<JArray>();
-                List<PackageType> allPackageType = JsonConvert.DeserializeObject<List<PackageType>>(jsonData.ToString());
-                foreach (PackageType onePackageType in allPackageType)
-                {
-                    listes.Add(onePackageType);
-                }
-                Console.WriteLine((JsonConvert.DeserializeObject<PackageType>(jsonParse.ToString())));
-                // Retourne un objet de la classe PackageType à partir de la chaine de caractère de l'objet JSON parsé avec clef "content"
-                //return JsonConvert.DeserializeObject<List<PackageType>>(jsonParse["data"].ToString());
-                //listes.Add(JsonConvert.DeserializeObject<PackageType>(jsonData));
-                return listes;
+                myPackageTypes.Add(JsonConvert.DeserializeObject<PackageType>(jObject.ToString()));
             }
-            else
-            {
-                return null;
-            }
+            Console.WriteLine(myPackageTypes);
+            return myPackageTypes;
         }
 
     }
