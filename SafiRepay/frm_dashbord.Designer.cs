@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             ComponentOwl.BetterListView.BetterListViewItem betterListViewItem3;
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tbc_dashboard = new MaterialSkin.Controls.MaterialTabControl();
             this.tbp_argent = new System.Windows.Forms.TabPage();
             this.sfCalendar1 = new Syncfusion.WinForms.Input.SfCalendar();
@@ -120,10 +120,10 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.tbx_kilometre = new System.Windows.Forms.RichTextBox();
+            this.tbx_nuitee = new System.Windows.Forms.RichTextBox();
+            this.tbx_relaisEtape = new System.Windows.Forms.RichTextBox();
+            this.tbx_repasMidi = new System.Windows.Forms.RichTextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -276,16 +276,16 @@
             // 
             // cht_dashboard
             // 
-            chartArea1.Name = "ChartArea1";
-            this.cht_dashboard.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.cht_dashboard.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.cht_dashboard.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.cht_dashboard.Legends.Add(legend2);
             this.cht_dashboard.Location = new System.Drawing.Point(6, 427);
             this.cht_dashboard.Name = "cht_dashboard";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.cht_dashboard.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.cht_dashboard.Series.Add(series2);
             this.cht_dashboard.Size = new System.Drawing.Size(492, 300);
             this.cht_dashboard.TabIndex = 0;
             this.cht_dashboard.Text = "chart1";
@@ -990,10 +990,10 @@
             this.tbp_parametres.Controls.Add(this.label38);
             this.tbp_parametres.Controls.Add(this.label32);
             this.tbp_parametres.Controls.Add(this.label30);
-            this.tbp_parametres.Controls.Add(this.richTextBox7);
-            this.tbp_parametres.Controls.Add(this.richTextBox6);
-            this.tbp_parametres.Controls.Add(this.richTextBox5);
-            this.tbp_parametres.Controls.Add(this.richTextBox4);
+            this.tbp_parametres.Controls.Add(this.tbx_kilometre);
+            this.tbp_parametres.Controls.Add(this.tbx_nuitee);
+            this.tbp_parametres.Controls.Add(this.tbx_relaisEtape);
+            this.tbp_parametres.Controls.Add(this.tbx_repasMidi);
             this.tbp_parametres.Controls.Add(this.label22);
             this.tbp_parametres.Controls.Add(this.label18);
             this.tbp_parametres.Controls.Add(this.label13);
@@ -1026,6 +1026,7 @@
             this.btn_Enregistrer.TabIndex = 13;
             this.btn_Enregistrer.Text = "Enregistrer";
             this.btn_Enregistrer.UseVisualStyleBackColor = true;
+            this.btn_Enregistrer.Click += new System.EventHandler(this.btn_Enregistrer_Click);
             // 
             // label40
             // 
@@ -1067,45 +1068,45 @@
             this.label30.TabIndex = 9;
             this.label30.Text = "€/repas";
             // 
-            // richTextBox7
+            // tbx_kilometre
             // 
-            this.richTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox7.Location = new System.Drawing.Point(960, 403);
-            this.richTextBox7.Multiline = false;
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(264, 37);
-            this.richTextBox7.TabIndex = 8;
-            this.richTextBox7.Text = "25";
+            this.tbx_kilometre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_kilometre.Location = new System.Drawing.Point(960, 403);
+            this.tbx_kilometre.Multiline = false;
+            this.tbx_kilometre.Name = "tbx_kilometre";
+            this.tbx_kilometre.Size = new System.Drawing.Size(264, 37);
+            this.tbx_kilometre.TabIndex = 8;
+            this.tbx_kilometre.Text = "25";
             // 
-            // richTextBox6
+            // tbx_nuitee
             // 
-            this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox6.Location = new System.Drawing.Point(960, 318);
-            this.richTextBox6.Multiline = false;
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(264, 37);
-            this.richTextBox6.TabIndex = 7;
-            this.richTextBox6.Text = "25";
+            this.tbx_nuitee.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_nuitee.Location = new System.Drawing.Point(960, 318);
+            this.tbx_nuitee.Multiline = false;
+            this.tbx_nuitee.Name = "tbx_nuitee";
+            this.tbx_nuitee.Size = new System.Drawing.Size(264, 37);
+            this.tbx_nuitee.TabIndex = 7;
+            this.tbx_nuitee.Text = "25";
             // 
-            // richTextBox5
+            // tbx_relaisEtape
             // 
-            this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox5.Location = new System.Drawing.Point(960, 239);
-            this.richTextBox5.Multiline = false;
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(264, 37);
-            this.richTextBox5.TabIndex = 6;
-            this.richTextBox5.Text = "25";
+            this.tbx_relaisEtape.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_relaisEtape.Location = new System.Drawing.Point(960, 239);
+            this.tbx_relaisEtape.Multiline = false;
+            this.tbx_relaisEtape.Name = "tbx_relaisEtape";
+            this.tbx_relaisEtape.Size = new System.Drawing.Size(264, 37);
+            this.tbx_relaisEtape.TabIndex = 6;
+            this.tbx_relaisEtape.Text = "25";
             // 
-            // richTextBox4
+            // tbx_repasMidi
             // 
-            this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox4.Location = new System.Drawing.Point(960, 150);
-            this.richTextBox4.Multiline = false;
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(264, 37);
-            this.richTextBox4.TabIndex = 5;
-            this.richTextBox4.Text = "25";
+            this.tbx_repasMidi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbx_repasMidi.Location = new System.Drawing.Point(960, 150);
+            this.tbx_repasMidi.Multiline = false;
+            this.tbx_repasMidi.Name = "tbx_repasMidi";
+            this.tbx_repasMidi.Size = new System.Drawing.Size(264, 37);
+            this.tbx_repasMidi.TabIndex = 5;
+            this.tbx_repasMidi.Text = "25";
             // 
             // label22
             // 
@@ -1371,10 +1372,10 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox tbx_kilometre;
+        private System.Windows.Forms.RichTextBox tbx_nuitee;
+        private System.Windows.Forms.RichTextBox tbx_relaisEtape;
+        private System.Windows.Forms.RichTextBox tbx_repasMidi;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label13;

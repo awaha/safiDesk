@@ -112,7 +112,10 @@ namespace SafiRepay
                     Hide();
                 }
             }
-            catch { MessageBox.Show("connection impossible"); }
+            catch 
+            { 
+                MessageBox.Show("Identifiants incorrectes.\n Si ce message était long à arriver, il ce peut que la connexion à l'API pose problème. Vérifier la connexion à l'API."); 
+            }
 
         }
 

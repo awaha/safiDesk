@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SafiRepay",
+    "\\SafiRepay\\Classes",
+    "\\SafiRepay\\Classes\\RAO"
   ],
-  "SelectedNode": "\\SafiRepay.sln",
+  "SelectedNode": "\\SafiRepay\\Scripts",
   "PreviewInSolutionExplorer": false
 }

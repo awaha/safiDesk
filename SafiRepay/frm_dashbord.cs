@@ -149,7 +149,28 @@ namespace SafiRepay
                 List<RAO.PackageType> packageType = RAO.PackageType.getFixedCosts();
                 foreach (RAO.PackageType OnePackageType in packageType)
                 {
-                    Console.WriteLine(OnePackageType.name);
+                    switch(Convert.ToInt32(OnePackageType.id))
+                    {
+                        case 1:
+                            //Console.WriteLine(OnePackageType.name + " = " + OnePackageType.amountMax);
+                            tbx_repasMidi.Text = OnePackageType.amountMax;
+                            break;
+                        case 2:
+                            //Console.WriteLine(OnePackageType.name + " = " + OnePackageType.amountMax);
+                            tbx_relaisEtape.Text = OnePackageType.amountMax;
+                            break;
+                        case 3:
+                            //Console.WriteLine(OnePackageType.name + " = " + OnePackageType.amountMax);
+                            tbx_nuitee.Text = OnePackageType.amountMax;
+                            break;
+                        case 4:
+                            //Console.WriteLine(OnePackageType.name + " = " + OnePackageType.amountMax);
+                            tbx_kilometre.Text = OnePackageType.amountMax;
+                            break;
+                        default:
+                            //Console.WriteLine("default");
+                            break;
+                    }
                 }
                 
             }
@@ -171,6 +192,14 @@ namespace SafiRepay
         {
             frm_personnalParam paramForm = new frm_personnalParam(this);
             paramForm.Show();
+        }
+
+        private void btn_Enregistrer_Click(object sender, EventArgs e)
+        {
+            RAO.PackageType.updateFixedCost(1,Convert.ToInt32(tbx_repasMidi.Text));
+            RAO.PackageType.updateFixedCost(2, Convert.ToInt32(tbx_relaisEtape.Text));
+            RAO.PackageType.updateFixedCost(3, Convert.ToInt32(tbx_nuitee.Text));
+            RAO.PackageType.updateFixedCost(4, Convert.ToInt32(tbx_kilometre.Text));
         }
     }
 }

@@ -12,21 +12,26 @@ namespace SafiRepay.RAO
         public String id { get; set; }
         public String amountMax { get; set; }
         public String name { get; set; }
-        public String message { get; set; }
-        public List<PackageType> data { get; set; }
         public static List<PackageType> getFixedCosts()
         {
             List<PackageType> myPackageTypes = new List<PackageType>();
             // Transforme la chaine de caractère du RAO en objet JSON = parser
             JArray jsonParse = JArray.Parse(RAO.get("getFixedCosts/"));
-            Console.WriteLine(jsonParse);
+            //Console.WriteLine(jsonParse);
             foreach(JObject jObject in jsonParse)
             {
                 myPackageTypes.Add(JsonConvert.DeserializeObject<PackageType>(jObject.ToString()));
             }
-            Console.WriteLine(myPackageTypes);
+            //Console.WriteLine(myPackageTypes);
             return myPackageTypes;
         }
 
+        public static void updateFixedCost(int packageTypeId, int packageTypeNewAmount)
+        {
+            List<string> str = new List<string>();
+            str.Add("amountMax");
+            str.Add(packageTypeNewAmount.ToString());
+            RAO.put("/SetUpFixedCosts/"+packageTypeId+"/{amountMax}",str);
+        }
     }
 }

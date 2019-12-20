@@ -575,7 +575,7 @@
             // btn_selUnsel_limit
             // 
             this.btn_selUnsel_limit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_selUnsel_limit.Location = new System.Drawing.Point(813, 393);
+            this.btn_selUnsel_limit.Location = new System.Drawing.Point(815, 403);
             this.btn_selUnsel_limit.Name = "btn_selUnsel_limit";
             this.btn_selUnsel_limit.Size = new System.Drawing.Size(202, 72);
             this.btn_selUnsel_limit.TabIndex = 48;
