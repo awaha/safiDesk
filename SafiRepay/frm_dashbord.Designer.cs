@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             ComponentOwl.BetterListView.BetterListViewItem betterListViewItem3;
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tbc_dashboard = new MaterialSkin.Controls.MaterialTabControl();
             this.tbp_argent = new System.Windows.Forms.TabPage();
             this.sfCalendar1 = new Syncfusion.WinForms.Input.SfCalendar();
@@ -276,16 +276,16 @@
             // 
             // cht_dashboard
             // 
-            chartArea2.Name = "ChartArea1";
-            this.cht_dashboard.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.cht_dashboard.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.cht_dashboard.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.cht_dashboard.Legends.Add(legend1);
             this.cht_dashboard.Location = new System.Drawing.Point(6, 427);
             this.cht_dashboard.Name = "cht_dashboard";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.cht_dashboard.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.cht_dashboard.Series.Add(series1);
             this.cht_dashboard.Size = new System.Drawing.Size(492, 300);
             this.cht_dashboard.TabIndex = 0;
             this.cht_dashboard.Text = "chart1";
