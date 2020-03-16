@@ -16,13 +16,13 @@ namespace SafiRepay.RAO
         {
             List<PackageType> myPackageTypes = new List<PackageType>();
             // Transforme la chaine de caractère du RAO en objet JSON = parser
-            JArray jsonParse = JArray.Parse(RAO.get("getFixedCosts/"));
+            //JArray jsonParse = JArray.Parse(RAO.get("getFixedCosts/"));
             //Console.WriteLine(jsonParse);
-            foreach(JObject jObject in jsonParse)
+            /*foreach(JObject jObject in jsonParse)
             {
                 myPackageTypes.Add(JsonConvert.DeserializeObject<PackageType>(jObject.ToString()));
             }
-            //Console.WriteLine(myPackageTypes);
+            //Console.WriteLine(myPackageTypes);*/
             return myPackageTypes;
         }
 

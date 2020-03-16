@@ -98,8 +98,10 @@ namespace SafiRepay
             {
                 string username = tbx_login.Text;
                 string psw = tbx_password.Text;
-
+                RAO.User.getLogin(username,psw);
+                
                 RAO.User userWantsConnection = RAO.User.getLogin(username, psw);
+                Console.WriteLine(userWantsConnection.firstname);
                 //userWantsConnection est forcément différent de null
                 //Si Connection ok
                 if (userWantsConnection != null)

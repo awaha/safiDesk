@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Windows.Forms;
 
 namespace SafiRepay.RAO
 {
@@ -37,20 +38,46 @@ namespace SafiRepay.RAO
             request.AddParameter(paramRoute.First<string>(), paramRoute.Last<string>());
             Console.WriteLine(paramRoute.First<string>() +" "+ paramRoute.Last<string>());
             //request.AddJsonBody(new { paramRoute });
-            client.Execute(request);
             IRestResponse response = client.Execute(request);
             return response.Content;
         }
-        public static String post(String route, String paramRoute)
+        public static String post(String route, object json)
         {
-            RestClient client = new RestClient();
-            client.BaseUrl = new Uri(Properties.Settings.Default.routeApi);
+            string routeAPI = "http://192.168.134.128:8000/api/" + route;
+
+            RestClient client = new RestClient(routeAPI);
             //post
-            RestRequest request = new RestRequest(route, Method.POST);
-            request.AddHeader("content-type", "application/x-www-form-urlencoded");
-            request.AddParameter("application/x-www-form-urlencoded", $"" + paramRoute, ParameterType.RequestBody);
+            RestRequest request = new RestRequest();
+            request.Method = Method.POST;
+
+            request.AddJsonBody(json);
+
+            request.RequestFormat = DataFormat.Json;
             IRestResponse response = client.Execute(request);
-            return response.Content;
+            String content = response.Content; // {"message":" created."}
+            Console.WriteLine("status : " + response.StatusCode.ToString());
+            Console.WriteLine("content : " + content);
+            return content;
+        }
+
+        
+        public static String test1(String route,object json)
+        {
+            string routeAPI = "http://192.168.134.128:8000/api/" + route;
+
+            RestClient client = new RestClient(routeAPI);
+            //post
+            RestRequest request = new RestRequest();
+            request.Method = Method.POST;
+
+            request.AddJsonBody(new {login = "dandre",password = "oppg5"});
+
+            request.RequestFormat = DataFormat.Json;
+            IRestResponse response = client.Execute(request);
+            String content = response.Content; // {"message":" created."}
+            Console.WriteLine("status : " + response.StatusCode.ToString());
+            Console.WriteLine("content : " + content);
+            return content;
         }
         
     }
